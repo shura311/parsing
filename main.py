@@ -9,4 +9,4 @@ for item in response:
         r[item['categories']] = r[item['categories']] + int(item['count']) * int(item['price'].replace(' руб', ''))
     else:
         r[item['categories']] = int(item['count']) * int(item['price'].replace(' руб', ''))
-print(r)
+print(f'Результат: {r}')
